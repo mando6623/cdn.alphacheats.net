@@ -1,1 +1,59 @@
-Welcome to Alphacheats cdn
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlphaCheats</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%; /* Ensure full height */
+            margin: 0; /* Reset default margin */
+            background-color: #000017; /* Dark background */
+            color: #ccc; /* Light text */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .centered-container {
+            display: flex; /* Use flexbox */
+            flex-direction: column; /* Stack children vertically */
+            justify-content: center; /* Center vertically */
+            align-items: center; /* Center horizontally */
+            height: 100%; /* Full height */
+            text-align: center; /* Center text */
+        }
+        .button-container {
+            display: flex; /* Flex container for buttons */
+            justify-content: center; /* Center buttons horizontally */
+            margin: 20px 0; /* Margin for spacing around buttons */
+        }
+        .glow-button {
+            font-size: 16px;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px; /* Space between buttons */
+            border-radius: 5px;
+            background: linear-gradient(145deg, #bb0000, #dd0000);
+            color: white;
+            text-shadow: 0 0 10px rgba(255, 100, 100, 0.7);
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.6), inset 0 0 10px rgba(128, 0, 0, 0.3);
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+        .glow-button:hover {
+            background: linear-gradient(145deg, #dd0000, #ff0000);
+            box-shadow: 0 0 25px rgba(255, 0, 0, 0.75), inset 0 0 15px rgba(128, 0, 0, 0.5);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="centered-container">
+        <img src="https://cdn.alphacheats.net/SPOILER_logo.webp" alt="AlphaCheats Logo" style="width: 300px; height: auto;">
+        <h1>Welcome to AlphaCheats</h1>
+        <p>Download the tools you need to enhance your gaming experience.</p>
+        <div class="button-container">
+            <button class="glow-button" onclick="window.location.href='configure.bat';">Download Configure</button>
+            <button class="glow-button" onclick="window.location.href='cleaner.bat';">Download Cleaner</button>
+        </div>
+    </div>
+</body>
+</html>
